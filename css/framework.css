@@ -1,0 +1,159 @@
+.d-flex{
+    display: flex;
+}
+.bg-white{
+    background-color: white;
+}
+.p-20{
+    padding: 20px;
+}
+
+.m-20{
+    margin: 20px;
+}
+.p-relative{
+    position: relative;
+}
+.text-c{
+    text-align: center;
+}
+.mt-0{
+    margin: 0;
+}
+.pr-20{
+    padding-right: 20px;
+}
+.align-c{
+    align-items: center;
+}
+.fs-14{
+    font-size: 14px;
+}
+.fs-30{
+    font-size: 20px;
+}
+.b-6{
+    border-radius: 6px;
+}
+.c-b{
+    color: black;
+}
+.p-10{
+    padding: 10px;
+}
+.pl-10{
+    padding-left: 10px;
+}
+.pl-20{
+    padding-left: 20px;
+}
+.p0{
+    padding: 0;
+}
+.m-0{
+    margin: 0;
+}
+.j-s{
+    justify-content: flex-start;
+}
+@media(max-width:767px){
+    .hide-mobile{
+        display: none;    /* هذا الكلاس بيشتغل فقط في ال ميديا الي عرضا 767 يعني بالموبايل فقط*/
+    }
+}
+.w-full{
+width: 100%;
+}
+.bo{
+    border: 1px solid #ddd;
+}
+.m-10{
+    margin: 10px;
+}
+.ml-20{
+margin-left: 20px;
+}
+.js-space{
+    justify-content: space-between;
+}
+.c-ddd{
+    color:gray;
+}
+.text-t-c{
+    text-transform: capitalize;
+}
+/* display grid */
+.d-grid{
+    display: grid;
+    
+    
+
+}
+.g-20{
+    gap: 20px;
+}
+
+@media(max-width:767px){
+    .text-c-mobile{
+        text-align: center;
+    }
+   
+}
+.c-gray{
+    color: gray;
+}
+
+.bg-eee{
+    background-color: #eee;
+}
+.pt-20{
+    padding-top: 20px;
+}
+.p-5{
+    padding: 5px;
+}
+.bg-mood{
+    background-color: var(--color-mood);
+}
+.mr-10{
+    margin-right: 10px;
+}
+.mb-20{
+    margin-bottom: 30px;
+}
+.mt-20{
+    margin-top: 20px;
+}
+.opacity{
+    opacity: 0.3;
+}
+.plr{
+    padding: 0 10px;
+}
+.fs-20{
+    font-size: 20px;
+}
+.c-white{
+    color: white;
+}
+.bg-b{
+    background-color: var(--blue-color);
+}
+.m-20{
+    margin: 20px;
+}
+.f-8{
+    font-weight: 800;
+}
+.fs-20{
+    font-size: 20px;
+}
+.w-5{
+width: 40px;
+}
+.br{
+    border-radius: 50%;
+}
+.bg-o{
+background-color: var(--orange-color);
+}

@@ -1,0 +1,678 @@
+*{
+    box-sizing: border-box;
+    
+}
+:root{
+    --color-mood: #2196f3;
+    --blue-color:#0a69a5;
+    --orange-color:#f59e0b;
+    --grren-color:#22c55e;
+    --gray-color:#888;
+    --red-color:#f44336;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+}
+*:focus{
+    outline: none;
+}
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-track{
+background-color: white;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #2196f3;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--blue-color);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style: none;
+  padding: 0;
+}
+.page{
+    background-color: #f1f5f9;
+    min-height: 100vh;
+    }
+    /* start animaition */
+@keyframes testing{
+    0% ,50%{
+background-color: white;
+    }
+    100%{
+        background-color: #2196f3;
+    }
+}
+/*end animaition  */
+/* start sidebar */
+.sidebar{
+    width: 250px;
+    box-shadow: 0 0 10px #ddd;
+}
+ .sidebar > h3{
+
+    margin-bottom: 50px;
+}
+
+.sidebar > h3::before{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 1px;
+   top: 150%;
+    background-color: black;
+    left: 60px;
+}
+.sidebar >h3::after{
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background-color: black;
+    top: 110%;
+    left:49%;
+    border-radius: 50%;
+    border: 5px solid white;
+    
+   
+}
+.sidebar ul li a{
+    transition: 0.3s;
+    
+}
+.sidebar ul li a:hover{
+background-color: #f5f1f9;
+}
+.sidebar ul li a i{
+   padding-right: 30px;
+}
+.sidebar ul li a span{
+    text-transform: capitalize;
+}
+@media ( max-width:767px) {
+    .sidebar{
+        width: 62px;
+        padding: 10px;
+       
+    }
+    .sidebar >h3{
+        font-size: 14px;
+  
+      }
+      .sidebar > h3::before,
+      ::after
+      {
+      display: none;
+      }
+     
+
+}
+/* end sidebar */
+/* start header-dashboard */
+header{
+
+}
+header .search i{
+left: 15%;
+}
+header .second i{
+}
+header .second i::after{
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+/* end header-dashboard */
+
+
+/* start-dashboard */
+.content{
+
+}
+.content >h1{
+margin: 10px;
+}
+.content > h1::before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 120px;
+    height: 2px;
+    background-color:white;
+}
+.content >h1::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 70px;
+    height: 2px;
+    background-color: black;
+    left: 3px;
+}
+.content .wrapper{
+   
+ grid-template-columns: repeat(auto-fill,minmax(450px,1fr));   
+ margin: 0 20px;
+
+
+}
+@media(max-width:767px){
+    .content .wrapper{
+        grid-template-columns: repeat(auto-fill,minmax(200px,1fr));   
+       gap: 10;
+        margin: 0 10px;
+       }
+}
+.content .body{
+    padding-bottom: 50px;
+}
+.content .body::after{
+content: "";
+position: absolute;
+width: 640px;
+height: 1px;
+top: 30%;
+background-color: #eee;
+}
+.content .body::before{
+    content: "";
+    position: absolute;
+    width: 640px;
+    height: 1px;
+    top: 70%;
+    background-color: #eee;
+    }
+.content .body img{
+    border: 6px solid whitesmoke;
+    border-radius: 50%;
+    top: -20px;
+    left: 10px;
+
+}
+.content a{
+    background-color: #2196f3;
+    color: white;
+
+  left: 85%;
+  bottom: 30px;
+}
+
+/* end -dashboard */
+/* start draft */
+
+.content .draft input{
+width: 550px;
+
+border: 1px solid #eee;
+}
+.content .draft textarea{
+    width: 550px;
+    border: 1px solid #eee;
+}
+.content .draft a{
+    bottom: 5px;
+     left: 84%;
+     color: white;
+}
+/* end darft */
+/* start target */
+.content .mony .data{
+    height: 10px;
+  background-color: #97c3ea;
+   width: 450px;
+}
+.content .mony .data span{
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+top: 0;
+background-color: var(--color-mood);
+}
+.content .mony .data span::after{
+content: attr(data-progress);
+position: absolute;
+/* top: -180%; */
+bottom: 180%;
+left: 90%;
+border-radius: 6px;
+padding: 1px;
+width: 35px;
+height: 20px;
+background-color: var(--color-mood);
+color: white;
+}
+.content .mony .data span::before{
+    content: "";
+    position: absolute;
+    bottom: 38%;
+    left: 93%;
+    border-width:10px;
+    border-style: solid ;
+    border-color:var(--color-mood) transparent transparent transparent;
+   
+}
+.content .project .data{
+    height: 10px;
+    background-color: #f3d49f;
+    width: 450px;
+}
+.content .project .data span{
+    width: 55%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+top: 0;
+background-color: orange;
+}
+.content .project .data span::after{
+content: attr(data-progress);
+position: absolute;
+/* top: -180%; */
+bottom: 180%;
+left: 90%;
+border-radius: 6px;
+padding: 1px;
+width: 35px;
+height: 20px;
+background-color:orange;
+color: white;
+}
+.content .project .data span::before{
+    content: "";
+    position: absolute;
+    bottom: 38%;
+    left: 93%;
+    border-width:10px;
+    border-style: solid ;
+    border-color:orange transparent transparent transparent;
+   
+}
+
+
+.content .team .data{
+    height: 10px;
+  background-color: #7ce2a2;
+   width: 450px;
+}
+.content .team .data span{
+    width: 75%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #22c55e;
+}
+.content .team .data span::after{
+content: attr(data-progress);
+position: absolute;
+/* top: -180%; */
+bottom: 180%;
+left: 90%;
+border-radius: 6px;
+padding: 1px;
+width: 35px;
+height: 20px;
+background-color:#22c55e;
+color: white;
+}
+.content .team .data span::before{
+    content: "";
+    position: absolute;
+    bottom: 38%;
+    left: 93%;
+    border-width:10px;
+    border-style: solid ;
+    border-color:#22c55e transparent transparent transparent;
+   
+}
+/* end target */
+/* start static */
+.content .static .box{
+    width: 300px;
+    border:  1px solid #ddd;
+    text-align: center;
+    margin: 10px;
+}
+
+/* end static */
+/* start news */
+.content .news .line{
+   position: relative;
+}
+.content .news .line:not(:last-child)::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 100%;
+    height: 1px;
+    width: 550px;
+    background-color: #ddd;
+    opacity: 0.4;
+}
+/* end news */
+ /* start task */
+.content .tasks .front{
+margin-top: 10px;
+    position: relative;
+
+}.content .tasks .front:not(:last-child)::before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 500px;
+    height: 1px;
+    background-color: #ddd;
+    opacity: 0.5;
+}
+  /* end task */
+  /* start uploads */
+  .content .uploads .large-file {
+position: relative;
+margin-bottom: 10px;
+}
+.content .uploads .large-file:not(:last-child)::before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 450px;
+    height: 1px;
+    background-color: #ddd;
+    opacity: 0.5;
+}
+  /* end uploads */
+/* start progress */
+.content .progress .got::before {
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: 0.5%;
+    width: 1px;
+    height: 256px;
+    background-color:#2196f3;
+}
+.content .progress .got li{
+  padding-left: 30px
+}
+.content .progress .got li::before{
+content: "";
+position: absolute;
+left:-1%;
+/* top: 30%; */
+width: 17px;
+height: 17px;
+border: 2px solid white;
+border-radius: 50%;
+background-color: #2196f3;
+outline: 2px solid #2196f3;
+}
+.content .progress .got li:last-child::before{
+ 
+background-color: white;
+border: 1px solid #2196f3;
+
+}
+.content .progress .got li:nth-child(4)::before{
+    transition: 0.3s;
+  animation: testing 0.8s infinite alternate;
+}
+
+/* end progress */
+ /* start remminder */ 
+ .content .remminder .rand li{
+    padding-left: 30px;
+ }
+.content .remminder .rand li::before{
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 55px;
+    left: 3%;
+    top: 0;
+}
+.content .remminder .rand li:first-child:before{
+  background-color: #2196f3;
+}
+.content .remminder .rand li:nth-child(2)::before{
+    background-color: #22c55e;
+}
+.content .remminder .rand li:nth-child(3)::before{
+  background-color: #f59e0b;
+}
+.content .remminder .rand li:nth-child(4)::before{
+   background-color: #f44336;
+}
+
+.content .remminder .rand li::after{
+    content: "";
+    position: absolute;
+    top: 40%;
+    left: -1%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: red;
+}
+.content .remminder .rand li:first-child::after{
+background-color: #2196f3;
+}
+.content .remminder .rand li:nth-child(2)::after{
+background-color: #22c55e;
+}
+.content .remminder .rand li:nth-child(3)::after{
+background-color: #f59e0b;
+}
+.content .remminder .rand li:last-child::after{
+background-color: #f44336;
+}
+ /* end remminder */
+ /* start post */
+
+.content .post .intro::after{
+content: "";
+position: absolute;
+top:110%;
+left: 0;
+width: 500px;
+height: 1px;
+background-color: #ddd;
+}
+.content .post p::after{
+    content: "";
+    position: absolute;
+    top:110%;
+    left: 0;
+    width: 500px;
+    height: 1px;
+    background-color: #ddd;
+    }
+
+
+ /* end post */
+/* start social */
+
+
+.content .social i:hover{
+    transition: 0.3s;
+transform: rotate(3deg);
+}
+
+/* end social */
+
+
+
+
+
+/* start client */
+.content table{
+    border: 1px solid #ddd;
+}
+.content table thead th{
+    border: 1px solid #ddd;
+}
+.content table tbody td{
+    border: 1px solid #ddd;
+}
+.content  table tbody tr:first-child  img:first-child{
+   position: relative;
+   left: -7%;
+
+}
+.content  table tbody tr:first-child  img:nth-child(2){
+    position: relative;
+left: -13%;
+}
+.content  table tbody tr:first-child  img:nth-child(3){
+   position: relative;
+   left: -20%;
+}
+.content  table tbody tr:first-child  img:nth-child(4){
+  position: relative;
+  left: -26%;
+}
+
+.content  table tbody tr:nth-child(2) img:first-child{
+    position: relative;
+    left: -13%;
+}
+.content  table tbody tr:nth-child(2) img:nth-child(2){
+    position: relative;
+    left: -18%;
+}
+.content  table tbody tr:nth-child(2) img:nth-child(3){
+    position: relative;
+    left: -22%;
+}
+.content  table tbody tr:nth-child(3) img:first-child{
+    position: relative;
+    left: -18%;
+}
+
+.content  table tbody tr:nth-child(3) img:nth-child(2){
+    position: relative;
+    left:-26%;
+}
+.content  table tbody tr:nth-child(4) img:first-child{
+    position: relative;
+    left:-17%;
+}
+.content  table tbody tr:nth-child(4) img:nth-child(2){
+    position: relative;
+    left:-24%;
+}
+.content  table tbody tr:nth-child(5) img:nth-child(1){
+    position: relative;
+    left:-18%;
+}
+.content  table tbody tr:nth-child(5) img:nth-child(2){
+    position: relative;
+    left:-25%;
+}
+
+.content  table tbody tr:last-child img:nth-child(1){
+    position: relative;
+    left:-5%;
+}
+.content  table tbody tr:last-child img:nth-child(2){
+    position: relative;
+    left:-13%;
+}
+.content  table tbody tr:last-child img:nth-child(3){
+    position: relative;
+    left:-19%;
+}
+.content  table tbody tr:last-child img:nth-child(4){
+    position: relative;
+    left:-25%;
+}
+/* end client */
+
+/* start page-2 */
+.page2 .sidebar2{
+    min-height: 100vh;
+}
+.page2{
+   min-height: 100vh;
+   background-color: #f1f5f9;
+}
+.page2 .sidebar2{
+    width: 250px;
+    box-shadow: 0 0 10px #ddd;
+}
+.page2 .sidebar2 li:hover{
+    background-color: #eee;
+}
+
+.page2 .sidebar2 > a >h3::before{
+content: "";
+position: absolute;
+top: 120%;
+left: 30%;
+width: 100px;
+height: 1px;
+background-color: black;
+}
+.page2 .sidebar2 > a >h3::after{
+content: "";
+position: absolute;
+top: 95%;
+left: 50%;
+width: 9px;
+height: 9px;
+border-radius: 50%;
+background-color: black;
+border: 5px solid white;
+
+}
+/* start head */
+.page2 .countainer .info input{
+    border: 1px solid #ddd;
+}
+.page2 .countainer .info i{
+    left: 20%;
+}
+
+/* end head */
+
+
+
+.page2 .countainer>h1::before,
+h1::after{
+    content: "";
+    position: absolute;
+    
+    top: 100%;
+    left: 1%;
+    height: 5px;
+}
+
+.page2 .countainer >h1::before{
+    width: 110px;
+    background-color: white;
+}
+.page2 .countainer >h1::after{
+    width: 60px;
+    background-color: black;
+
+}
+.page2 .countainer .wrapper{
+    grid-template-columns: repeat(auto-fill,minmax(450px,1fr));
+    margin-left: 10px;
+}
+.page2 .countainer .toggle-chekbox{
+
+}
